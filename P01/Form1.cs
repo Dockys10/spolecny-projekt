@@ -61,6 +61,8 @@ namespace P01
 
         private void button33_Click(object sender, EventArgs e)
         {
+            label1.Text = "Seš gay";
+            
             string novepismeno = "";
             panel1.Enabled = true;
             button32.Enabled = true;
