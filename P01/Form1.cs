@@ -19,6 +19,7 @@ namespace P01
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            button33.Enabled = false;
             int i = 0;
             string pismena = " !?.,MNBVCXZLKJHGFDSAPOIUYTREWQ";
             foreach (Control ctrl in panel1.Controls)
@@ -37,6 +38,9 @@ namespace P01
         private void button32_Click(object sender, EventArgs e)
         {
             string novepismeno = "";
+            panel1.Enabled = false;
+            button32.Enabled = false;
+            button33.Enabled = true;
             foreach (char pismeno in textBox1.Text)
             {
                 if (pismeno >= 'A')
@@ -58,6 +62,9 @@ namespace P01
         private void button33_Click(object sender, EventArgs e)
         {
             string novepismeno = "";
+            panel1.Enabled = true;
+            button32.Enabled = true;
+            button33.Enabled = false;
             foreach (char pismeno in textBox1.Text)
             {
                 if (pismeno >= 'A')
