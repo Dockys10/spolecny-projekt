@@ -19,7 +19,12 @@ namespace P01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            string pismena = "QWERTYUIOPASDFGHJKLZXCVBNM .,?!";
+            foreach (Control ctrl in panel1.Controls)
+            {
+                if (ctrl is Button) (ctrl as Button).Text = pismena[i].ToString();
+                i++;
+            }
         }
     }
 }
